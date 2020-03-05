@@ -1,0 +1,213 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+      font-family: "Roboto", Arial, sans;
+      font-size: 16px;
+      font-weight: normal;
+      width: 1440px;
+  }
+
+.header {
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation {
+    display: flex;
+    background-color: #eeeeee;
+    margin: 0 auto;
+    padding: 0 140px;
+}
+
+.logo {
+    padding-top: 49px;
+}
+
+.basket-list,
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list {
+    display: flex;
+    margin: 0;
+    padding-top: 83px;
+    padding-bottom: 16px;
+    padding-left: 202px;
+}
+
+.navigation-item a,
+.basket-list a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+    line-height: 1.88;
+}
+.navigation-item a,
+.basket-list a,
+.promo-link,
+.order {
+    text-decoration: none;
+}
+
+.navigation-item {
+    padding-left: 47px;
+}
+
+.basket-list {
+    margin: 0;
+    margin-left: auto;
+    padding-top: 83px;
+}
+
+.basket {
+    padding-left: 26px;
+    position: relative;
+}
+
+
+
+.basket::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/basket-icon.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.promo-wrap {
+    background-color: #eeeeee;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 140px;
+    padding-top: 85px;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-slogan {
+    margin: 0;
+    width: 378px;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.promo-tagline {
+    width: 364px;
+    margin: 0;
+    padding-top: 28px;
+}
+
+.promo-link {
+    width: 240px;
+    margin-top: 42px;
+    padding: 19px 53px;
+    line-height: 1.13;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+.image-wrap {
+    margin-left: auto;
+}
+
+.products {
+    padding: 0 140px;
+}
+
+.products-list {
+    display: flex;
+    margin: 0;
+}
+
+.products-item {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+
+.products-item h2 {
+    margin: 0;
+    padding-top: 252px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.products-item p {
+    margin: 0;
+    width: 244px;
+    padding-top: 26px;
+    line-height: 1.5;
+}
+
+.red {
+    position: relative;
+    background-image: url(../img/advantage-picture-red.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 80px;
+   background-size: 300px 146px;
+}
+
+.green {
+    position: relative;
+    background-image: url(../img/advantage-picture-green.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 80px;
+   background-size: 300px 146px;
+}
+
+.yellow {
+    position: relative;
+    background-image: url(../img/advantage-picture-yellow.png);
+    background-repeat: no-repeat;
+    background-position: left 0px top 80px;
+   background-size: 300px 146px;
+}
+
+.order {
+    margin: 0;
+    margin-top: 35px;
+    font-weight: 500;
+    line-height: 1.13;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    width: 160px;
+    height: 50px;
+    padding: 18px 39px;
+}
+
+.red-bg {
+    background-color: #fb565a;
+}
+
+.green-bg {
+    background-color: #00ca74;
+}
+
+.yellow-bg {
+    background-color: #efc84a;
+}

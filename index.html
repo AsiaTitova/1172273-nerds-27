@@ -3,10 +3,116 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header сlass="header">
+      <nav class="navigation">
+        <div class="logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип">
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#">Студия</a></li>
+          <li class="navigation-item"><a href="#">Клиенты</a></li>
+          <li class="navigation-item"><a href="#">Магазин</a></li>
+          <li class="navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="basket-list">
+          <li class="basket-item"><a class="basket" href="#">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="promo-wrap">
+      <div class="promo">
+        <p class="promo-slogan">Долго, дорого, скрупулезно.</p>
+        <p class="promo-tagline">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+        <a class="promo-link" href="#">Узнать больше</a> 
+      </div>
+      <div class="image-wrap"><img src="img/slide-picture.png" width="698" height="413" alt="Изображение телефонов"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="products">
+        <ul class="products-list"> 
+          <li class="products-item red">
+            <h2>Веб-сайты</h2>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="order red-bg" href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="products-item green">
+            <h2>Приложения</h2>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="order green-bg" href="#">ЗАКАЗАТЬ</a>
+          </li>
+          <li class="products-item yellow">
+            <h2>Презентации</h2>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="order yellow-bg" href="#">ЗАКАЗАТЬ</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-us">
+        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <h2>Выполняем заказы на разработку:</h2>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        <h2>с 2004 года Любим точность во всем:</h2>
+        <ul>
+          <li>146% Уровень самоотдачи</li>
+          <li>100% Соблюдение сроков</li>
+          <li>50% Минимальная предоплата</li>
+        </ul>
+      </section>
+      <section class="partners">
+        <ul class="parthers-list">
+          <li сlass="partners-item"><a class="html-academy" href="#"></a></li>
+          <li сlass="partners-item"><a  class="borodinski" href="#"></a></li>
+          <li сlass="partners-item"><a  class="pink" href="#"></a></li>
+          <li сlass="partners-item"><a  class="mishka" href="#"></a></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="map"></div>
+      <div class="contacts">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург, 
+           ул. Б. Конюшенная, д. 19/8</p>
+        <tel>тел. +7 (812) 275-75-75</tel>
+        <button>Напишите нам</button>
+        </div>
+
+      <div class="socials">
+        <ul class="socials-list">
+          <li class="socials-item ">
+            <a href="#" class="VK" aria-label="ВКонтакте">  </a>
+          </li>
+          <li class="socials-item">
+            <a href="#" class="facebook" aria-label="Фейсбук"> </a>
+          </li>
+          <li class="socials-item">
+            <a href="#" class="instagram" aria-label="Инстаграмм">  </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+
+     
+    </footer>
+
+
 
   </body>
 </html>

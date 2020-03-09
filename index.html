@@ -30,15 +30,56 @@
     
 
     <main> 
-      <section class="promo-wrap">
+      <section class="slide-wrap">
         <h1 class="visually-hidden">Главная страница</h1>
-      <div class="promo">
-        <p class="promo-slogan">Долго, дорого,<br> скрупулезно.</p>
-        <p class="promo-tagline">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-        <a class="promo-link" href="#">Узнать больше</a> 
-      </div>
-      <div class="image-wrap"><img src="img/slide-picture.png" width="698" height="413" alt="Изображение телефонов"></div>
+        <ul class="slide-list">
+          <li class="slide-item slide-one">
+            <div class="slide">
+              <p class="slide-slogan">Долго, дорого,<br> скрупулезно.</p>
+              <p class="slide-tagline">Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+              <a class="slide-link" href="#">Узнать больше</a> 
+            </div>
+            <div class="slide-image">
+              <img src="img/slide-picture.png" width="698" height="413" alt="Изображение телефонов">
+            </div>
+          </li>
+          <li class="slide-item slide-two visually-hidden">
+            <div class="slide">
+              <p class="slide-slogan">Любим математику как никто другой</p>
+              <p class="slide-tagline">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="slide-link" href="#">Узнать больше</a> 
+            </div>
+            <div class="slide-image">
+              <img src="img/slide-picture-2.png" width="633" height="430" alt="Изображение телефонов">
+            </div>
+          </li>
+          <li class="slide-item slide-three visually-hidden">
+            <div class="slide">
+              <p class="slide-slogan">Только ночь, только хардкор</p>
+              <p class="slide-tagline">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="slide-link" href="#">Узнать больше</a> 
+            </div>
+            <div class="slide-image">
+              <img src="img/slide-picture-3.png" width="759" height="411" alt="Изображение телефонов">
+            </div>
+          </li>
+        </ul>
+        <ul class="slide-button-list">
+          <li class="slide-button-item">
+            <button class="slide-button-one" type="button"></button>
+          </li>
+          <li class="slide-button-item">
+            <button class="slide-button-two" type="button"></button>
+          </li>
+          <li class="slide-button-item">
+            <button class="slide-button-three" type="button"></button>
+          </li>
+        </ul>
     </section>
+
+
+
+
       <section class="products">
         <ul class="products-list"> 
           <li class="products-item red">
@@ -153,7 +194,9 @@
      
     </footer>
 
+    <script src="js/slider-script.js">
 
+    </script>
 
   </body>
 </html>

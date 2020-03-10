@@ -9,7 +9,7 @@
   </head>
   <body>
 
-    <header сlass="header">
+    <header>
       <nav class="navigation">
         <div class="logo">
             <a href="index.html">
@@ -255,8 +255,8 @@
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p>191186, Санкт-Петербург, 
              ул. Б. Конюшенная, д. 19/8</p>
-          <tel>тел. +7 (812) 275-75-75</tel>
-          <button type=" button" class="write">Напишите нам</button>
+             <a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+          <button type="button" class="write">Напишите нам</button>
           </div>
         </div>
   
@@ -282,6 +282,29 @@
         </div>
        
       </footer>
+
+      <section class="modal visually-hidden modal-error">
+        <h2 class="modal-title">Напишите нам</h2>
+        <form method="post" action="https://echo.htmlacademy.ru" class="modal-form">
+          <p class="half-width">
+            <label for="fullname">Ваше имя:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Имя Фамилия" value="Имя Фамилия">
+          </p>
+          <p class="half-width">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" value="email@example.com">
+          </p>
+          <p class="full-width">
+            <label for="comment">Текст письма:</label>
+            <textarea id="comment" name="comment" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
+        <button type="button" class="modal-close"></button>
+      </section>
+  
+
+      <script src="js/modal.js"></script>
 
     </body>
     </html>

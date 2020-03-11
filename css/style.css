@@ -753,10 +753,17 @@ footer {
     background-color: #e74246;
 }
 
-.socials-item:active {
+.socials-item:active  {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #d7373b;
 }
+
+.socials-item:active a {
+    opacity: 0.3;
+}
+
+
+
 
 .socials-item:not(:first-child) {
     margin-left: 12px;
@@ -1331,16 +1338,31 @@ height: 50px;;
     border: solid 2px #d7dcde; 
 }
 
-::-webkit-input-placeholder { 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder { 
     opacity: 0.5;
     line-height: 1.13;
     color: rgba(68, 68, 68, 0.5);
  }
-::-moz-placeholder { 
-    opacity: 0.5;
-    line-height: 1.13;
-    color: rgba(68, 68, 68, 0.5);
+
+
+ .full-width textarea:hover,
+ .half-width input:hover {
+    border: solid 2px #b4b9bb;
  }
+
+ ::-webkit-input-placeholder:focus,
+ ::-moz-placeholder:focus {
+    color: #444444;
+ }
+
+ .half-width input:focus,
+ .full-width textarea:focus {
+    border: solid 2px #000000;
+ }
+
 
 .modal-button {
     width: 260px;
@@ -1355,37 +1377,46 @@ height: 50px;;
     background-color: #fb565a;  
 }
 
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #e74246;
+}
+
+.modal-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+    background-color: #d7373b;
+}
+
 .modal-close {
     position: absolute;
     z-index: 2;
     right: 90px;
     bottom: 491px;
+    padding: 0;
     width: 21px;
     height: 21px;
     border: none;
     background-color: transparent;
+} 
+
+.modal-close svg {
+    position: relative;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
 }
 
-.modal-close::before,
-.modal-close::after {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    left: -2px;
-    top: 7px;
-    width: 24px;
-    height: 4px;
-
-    background-color: rgba(251, 86, 90, 0.3);
+.modal-close:hover svg,
+.modal-close:focus svg {
+    opacity: 1;
 }
 
-.modal-close::before {
-    transform: rotate(45deg);
+.modal-close:active svg {
+    opacity: 0.1;
 }
 
-.modal-close::after {
-    transform: rotate(-45deg);
-}
+
 
 .modal-error {
     animation-name: shake;

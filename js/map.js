@@ -1,23 +1,35 @@
-ymaps.ready(function() {
-    var myMap = new ymaps.Map("map", {
-          center: [59.9380,30.3200],
-          zoom: [17],
-          controls: []
-       }),
- 
-       myMap.behaviors.disable("scrollZoom");
-       myMap.controls.add("zoomControl");
- 
-    var   myPlacemark = new ymaps.Placemark([59.9386,30.3225], {
-          hintContent: "",
-          balloonContent: "ул. Б. Конюшенная 18/8"
-          }, {
- 
-          iconLayout: "default#image",
-          iconImageHref: "../img/map-marker.png",
-          iconImageSize: [231, 190],
-          iconImageOffset: [0, 0]
-       }),
- 
-       myMap.geoObjects.add(myPlacemark);   
-    });
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.939287346934364,30.319933535690303],
+            zoom: 17
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemarkWithContent = new ymaps.Placemark([59.938784, 30.32312], {
+            hintContent: 'Собственный значок метки с контентом',
+            balloonContent: 'А эта — новогодняя',
+            iconContent: '12'
+        }, {
+
+            iconLayout: "default#image",
+            iconImageHref: "img/map-marker.png",
+            iconImageSize: [231, 190],
+            iconImageOffset: [-50, -200],
+
+            iconContentLayout: MyIconContentLayout
+        });
+
+    myMap.geoObjects
+
+        .add(myPlacemarkWithContent);
+});
+
+
+
+
+

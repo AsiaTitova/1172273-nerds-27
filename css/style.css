@@ -1308,7 +1308,7 @@ textarea::-moz-placeholder {
 
 .modal-error input[type="text"],
 .modal-error input[type="email"],
-.modal-error textarea {
+.modal-error .comment {
     border: solid 2px #e74246;
     color: #e74246;
 }

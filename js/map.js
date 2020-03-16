@@ -3,7 +3,8 @@ ymaps.ready(function () {
             center: [59.939287346934364,30.319933535690303],
             zoom: 17
         }, {
-            searchControlProvider: 'yandex#search'
+            searchControlProvider: 'yandex#search',
+
         }),
 
         MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
@@ -11,9 +12,9 @@ ymaps.ready(function () {
         ),
 
         myPlacemarkWithContent = new ymaps.Placemark([59.938784, 30.32312], {
-            hintContent: 'Собственный значок метки с контентом',
-            balloonContent: 'А эта — новогодняя',
-            iconContent: '12'
+            hintContent: "",
+            balloonContent: "",
+            iconContent: ""
         }, {
 
             iconLayout: "default#image",
@@ -27,6 +28,8 @@ ymaps.ready(function () {
     myMap.geoObjects
 
         .add(myPlacemarkWithContent);
+
+        myMap.behaviors.disable('scrollZoom'); 
 });
 
 

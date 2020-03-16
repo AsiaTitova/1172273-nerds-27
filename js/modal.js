@@ -5,7 +5,7 @@ var button = document.querySelector(".write");
 
 button.addEventListener("click", function (evt) {
     event.preventDefault();
-    popup.classList.remove("visually-hidden");
+    popup.classList.add("modal-show");
     popup.classList.remove("modal-error");
 });
 
@@ -13,7 +13,7 @@ var close = popup.querySelector(".modal-close");
 
 close.addEventListener("click", function (evt) {
     event.preventDefault();
-    popup.classList.add("visually-hidden");
+    popup.classList.remove("modal-show");
     
 });
 

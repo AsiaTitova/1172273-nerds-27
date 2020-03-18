@@ -29,7 +29,7 @@ ymaps.ready(function () {
 
         .add(myPlacemarkWithContent);
 
-        myMap.behaviors.disable('scrollZoom'); 
+    myMap.behaviors.disable('scrollZoom'); 
 });
 
 

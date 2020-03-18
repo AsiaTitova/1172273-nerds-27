@@ -458,10 +458,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.advantages-item {
-    display: flex;
-    flex-direction: column;
-}
 
 .advantages-item:not(:first-child) {
     margin-left: 20px;
@@ -566,6 +562,10 @@ footer {
     flex-direction: column;
     position: relative;
 }
+.part-map .container {
+    position: relative;
+    top: -416px;
+}
 .map {
     position: relative;
     z-index: 0;
@@ -597,10 +597,9 @@ footer {
     z-index: 3;
     top: 51px;
     left: 139px;
-    display: flex;
-    flex-direction: column;
     width: 319px;
     height: 308px;
+    margin: 0 auto;
     padding: 0 50px;
     background-color: #ffffff;
 }

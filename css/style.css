@@ -183,7 +183,7 @@ body {
 
 
 .slide {
-    margin-top: 74px;
+    margin-top: 70px;
 }
 
 .slide-slogan {
@@ -226,7 +226,7 @@ body {
     margin: 0;
     padding: 0;
     bottom: 96px;
-    margin-left: 556px;  
+    margin-left: 540px;  
 }
 
 .slide-button-item {
@@ -282,9 +282,8 @@ body {
     margin-top: 11px;
 } 
 
-.products .container {
-    margin-top: 80px;
-    margin-bottom: 97px;
+.products {
+   margin: 80px 0;
 }
 .products-list {
     display: flex;
@@ -317,7 +316,7 @@ body {
     display: block;
     width: 160px;
     height: 50px;
-    margin-top: 46px;
+    margin-top: 32px;
     padding: 16px 41px;
     color: #ffffff;
     border-radius: 4px;
@@ -369,22 +368,20 @@ body {
     box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
     background-color: #e5a722;
 }
-.about-us {
 
-    padding-bottom: 75px;
-    line-height: 1.5;
-    
-}
 
 .about-us .container {
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 65px;
     border-top: 2px solid #eeeeee;
+    
 }
 
 .presentation {
     padding-top: 76px;
+    line-height: 1.5;
 }
 
 .nerds-img {
@@ -465,7 +462,7 @@ body {
 
 .items {
     margin: 0px;
-    padding-top: 35px;
+    padding-top: 30px;
     color: #283136;
 }
 .percent {

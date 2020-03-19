@@ -5,16 +5,21 @@ var button = document.querySelector(".write");
 
 button.addEventListener("click", function (evt) {
     event.preventDefault();
+    popup.classList.remove("modal-close");
     popup.classList.add("modal-show");
     popup.classList.remove("modal-error");
 });
 
-var close = popup.querySelector(".modal-close");
+var close = popup.querySelector(".modal-close-button");
 
 close.addEventListener("click", function (evt) {
     event.preventDefault();
-    popup.classList.remove("modal-show");
-    
+    popup.classList.remove("modal-error"); 
+    popup.classList.add("modal-close");
+    setTimeout(function () {  
+        popup.classList.remove("modal-show");
+         
+         }, 600);  
 });
 
 var form = popup.querySelector("form");

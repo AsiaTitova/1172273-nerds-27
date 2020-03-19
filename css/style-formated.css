@@ -98,7 +98,7 @@ html {
      height: 2px;
      background-color: #fb565a;
 }
- .navigation-item a, .basket-list a, .slide-link, .products-link, .tel, .catalog-hover a, .filters-item a, .pages-link, .catalog-hover-button {
+ .navigation-item a, .write, .basket-list a, .slide-link, .products-link, .tel, .catalog-hover a, .filters-item a, .pages-link, .catalog-hover-button {
      text-decoration: none;
 }
  .navigation-item:not(:first-child) {
@@ -143,17 +143,21 @@ html {
  .slide-tagline {
      margin: 0;
      margin-top: 28px;
+     line-height: 1.5;
 }
  .slide-link {
      display: block;
      width: 242px;
-     margin-top: 48px;
+     margin-top: 35px;
      padding: 17px 53px;
      line-height: 1.13;
 }
  .slide-image {
      margin-top: 9px;
      margin-left: 52px;
+}
+.slide-image img {
+     display: block;
 }
  .slide-list {
      margin: 0;
@@ -217,17 +221,18 @@ html {
      margin-top: 11px;
 }
  .products .container {
-     margin-top: 77px;
-     margin-bottom: 79px;
+     margin-top: 80px;
+     margin-bottom: 80px;
 }
  .products-list {
      display: flex;
+     flex-wrap: wrap;
      margin: 0;
      padding: 0;
 }
  .products-item {
      width: 300px;
-     padding-top: 152px;
+     padding-top: 154px;
 }
  .products-item:not(:last-child) {
      margin-right: 100px;
@@ -248,7 +253,7 @@ html {
      display: block;
      width: 160px;
      height: 50px;
-     margin-top: 33px;
+     margin-top: 30px;
      padding: 16px 41px;
      color: #ffffff;
      border-radius: 4px;
@@ -404,6 +409,7 @@ html {
  .partners-list {
      position: relative;
      display: flex;
+     flex-wrap: wrap;
      margin: 0;
      padding: 0;
 }
@@ -497,7 +503,7 @@ html {
 }
  .contacts h2 {
      margin: 0;
-     margin-top: 50px;
+     margin-top: 53px;
      text-transform: uppercase;
      font-size: 18px;
      font-weight: bold;
@@ -520,10 +526,12 @@ html {
      color: #666666;
 }
  .write {
+     display: block;
      width: 219px;
      height: 50px;
      margin-bottom: 47px;
      margin-top: 36px;
+     padding: 18px 40px;
 }
  .part-socials {
      display: flex;
@@ -596,8 +604,8 @@ html {
      background-color: #eeeeee;
 }
  .promo-catalog .container {
-     padding-bottom: 109px;
-     padding-top: 71px;
+     padding-bottom: 107px;
+     padding-top: 70px;
 }
  .promo-catalog h1 {
      margin: 0;
@@ -609,7 +617,7 @@ html {
  .catalog-wrap {
      display: flex;
      justify-content: space-between;
-     margin-top: 55px;
+     margin-top: 59px;
 }
  .catalog-filters {
      width: 260px;
@@ -678,6 +686,7 @@ html {
      width: 50%;
      font-size: 16px;
      text-transform: uppercase;
+     line-height: 100%;
 }
  .price-controls input {
      width: 60px;
@@ -812,6 +821,7 @@ html {
      font-weight: 500;
      line-height: 1.13;
      text-align: center;
+     text-transform: uppercase;
      background-color: #eeeeee;
      border: none;
      cursor: pointer;
@@ -912,8 +922,12 @@ html {
      fill: #4d4d4d;
 }
  .catalog-img {
-     margin-top: -5px;
+     margin-top: -3px;
 }
+.catalog-img img {
+     display: block;
+}
+
  .catalog-item:hover svg, .catalog-item:focus svg {
      fill: #4d4d4d;
 }
@@ -978,7 +992,7 @@ html {
      display: block;
      width: 50px;
      height: 50px;
-     padding: 12px;
+     padding: 16px;
      font-weight: 500;
      text-align: center;
      background-color: #eeeeee;
@@ -1076,12 +1090,13 @@ html {
      border: solid 2px #000000;
      color: #444444;
 }
+
  .modal-button {
      width: 260px;
      height: 50px;
      margin-top: 47px;
 }
- .modal-close {
+ .modal-close-button {
      position: absolute;
      z-index: 2;
      right: 90px;
@@ -1091,20 +1106,54 @@ html {
      background-color: transparent;
      cursor: pointer;
 }
+
+
+
  .modal-show {
      display: block;
+     animation-name: show;
+     animation-duration: 0.6s;
 }
+
+@keyframes show {
+     0%  {transform: translateX(-50%) scale(0);}
+     100%  {transform: translateX(-50%) scale(1);}
+}
+
  .modal-close svg {
      opacity: 0.3;
 }
+
+
  .modal-close:hover svg, .modal-close:focus svg {
      opacity: 1;
 }
  .modal-close:active svg {
      opacity: 0.1;
 }
+
+.modal-close {
+     animation-name: close;
+     animation-duration: 0.6s;
+}
+
+@keyframes close {
+     0%  {transform: translateX(-50%) scale(1);}
+     100%  {transform: translateX(-50%) scale(0);} 
+}
+
  .modal-error input[type="text"], .modal-error input[type="email"], .modal-error textarea {
      border: solid 2px #e74246;
      color: #e74246;
 }
+
+.modal-error {
+     animation-name: shake;
+}
+
+@keyframes shake {
+     0%, 100% {transform: translateX(-50%);}
+     10%, 30%, 50%, 70%, 90% {transform: translateX(-50%) translateX(-10px);}
+     20%, 40%, 60%, 80% {transform: translateX(-50%) translateX(10px);}
+   }
  

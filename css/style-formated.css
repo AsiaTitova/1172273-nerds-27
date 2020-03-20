@@ -400,7 +400,7 @@ html {
      position: relative;
 }
  .partners .container {
-     padding-top: 45px;
+     
      padding-bottom: 45px;
      margin-bottom: 80px;
      border-top: 2px solid #eeeeee;
@@ -417,6 +417,7 @@ html {
      position: relative;
      width: 25%;
      display: flex;
+     padding-top: 45px;
 }
  .partners-item a {
      display: flex;
@@ -444,20 +445,20 @@ html {
      margin-left: 75px;
      margin-top: 11px;
 }
- .partners-item:not(:first-child)::before {
+ .partners-item:not(:nth-child(4n))::before {
      content: "";
      position: absolute;
      width: 2px;
      height: 52px;
-     left: 0;
-     top: 17px;
+     right: 0;
+     top: 65px;
      background-color: #eeeeee;
 }
- .partners-item:nth-child(2)::before {
-     left: -10px;
+ .partners-item:nth-child(4n+1)::before {
+     right: 10px;
 }
- .partners-item:last-child::before {
-     left: 10px;
+ .partners-item:nth-child(4n-1)::before {
+     right: -10px;
 }
  footer {
      display: flex;
@@ -687,6 +688,7 @@ html {
      font-size: 16px;
      text-transform: uppercase;
      line-height: 100%;
+     vertical-align: middle;
 }
  .price-controls input {
      width: 60px;
